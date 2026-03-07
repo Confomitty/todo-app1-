@@ -10,3 +10,9 @@ def write_todos(todos_arg , filepath = "todos.txt"):
     """Write the to-do items list in the text file."""
     with open(filepath, 'w') as file:
         file.writelines(todos_arg)
+
+if __name__ == "__main__":    #this protects these two lines so that they are only executed when functions.py is executed directly
+    print("Hello")
+    print(get_todos())
+
+
